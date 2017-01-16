@@ -10,7 +10,7 @@
 <head>
   <base href="<%=basePath%>">
 
-  <title>社会选择函数</title>
+  <title>基于社会选择理论的在线服务评价平台</title>
   <meta http-equiv="pragma" content="no-cache">
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
@@ -100,20 +100,20 @@
 <div id="cc" class="easyui-layout" data-options="fit:true">
   <!-- ---------------------顶部开始--------------------------- -->
   <div data-options="region:'north'" style="height:100px;">
-    <h1 align="center" style="font-size: 30px">社会选择函数</h1>
+    <h1 align="center" style="font-size: 30px">基于社会选择理论的在线服务评价平台</h1>
   </div>
   <!-- ---------------------顶部结束--------------------------- -->
 
   <!-- ---------------------底部开始--------------------------- -->
   <div data-options="region:'south'" style="height:50px;text-align: center">
-    2016 版权所有©社会选择函数
+    2016 版权所有©基于社会选择理论的在线服务评价平台
   </div>
   <!-- ---------------------底部结束--------------------------- -->
 
   <!-- ---------------------左边功能菜单开始--------------------------- -->
-  <div data-options="region:'west',title:'Schulze社会选择函数'" style="width:200px;">
+  <div data-options="region:'west',title:'在线服务评价平台'" style="width:200px;">
     <div id="aa" class="easyui-accordion" data-options="fit:true" >
-      <div id="menu" title="在线商品评价" data-options="iconCls:'icon-reload',selected:true">
+      <div id="menu" title="在线服务评价" data-options="iconCls:'icon-reload',selected:true">
         <ul>
           <li><a name="${pageContext.request.contextPath }/socialFun/uploadExcel52" href="#">52</a></li>
           <li><a name="${pageContext.request.contextPath }/socialFun/uploadExcel105" href="#">105</a></li>
@@ -122,11 +122,8 @@
           <li><a name="${pageContext.request.contextPath }/socialFun/uploadExcel827" href="#">827</a></li>
         </ul>
       </div>
-      <div title="竞赛成绩评定" data-options="iconCls:'icon-reload'">
-        content2
-      </div>
       <div title="其他" data-options="iconCls:'icon-reload'">
-        content3
+        content2
       </div>
     </div>
   </div>
@@ -137,7 +134,7 @@
 
     <div id="tt" class="easyui-tabs"  data-options="fit:true" style="width:500px;height:250px;">
       <div title="欢迎页" style="padding:5px;">
-        <h3>本系统的功能是实现基于Schulze社会选择算法的排序。</h3>
+        <h3>本系统的功能是实现基于社会选择理论的在线服务评价平台。</h3>
         <h3>请选择右方的排序方法</h3>
       </div>
     </div>

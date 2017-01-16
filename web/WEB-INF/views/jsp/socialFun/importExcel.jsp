@@ -78,13 +78,13 @@
     </tr>
     <tr>
       <td><input type="submit"  class="easyui-linkbutton" value="提交" onclick="checkData()"></td>
-      <td><input type="button" class="easyui-linkbutton" value="ajax方式提交" id="btn" name="btn" ></td>
+      <%--<td><input type="button" class="easyui-linkbutton" value="ajax方式提交" id="btn" name="btn" ></td>--%>
     </tr>
   </table>
 </form>
   <div>
     <h3>1.选择要上传的数据文件</h3>
-    <h3>2.目前支持03版本的excel数据</h3>
+    <h3>2.请选择改标签页下对应的数据集</h3>
   </div>
 </body>
 </html>
