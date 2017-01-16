@@ -115,11 +115,11 @@
     <div id="aa" class="easyui-accordion" data-options="fit:true" >
       <div id="menu" title="在线服务评价" data-options="iconCls:'icon-reload',selected:true">
         <ul>
-          <li><a name="${pageContext.request.contextPath }/socialFun/uploadExcel52" href="#">52</a></li>
-          <li><a name="${pageContext.request.contextPath }/socialFun/uploadExcel105" href="#">105</a></li>
-          <li><a name="${pageContext.request.contextPath }/socialFun/uploadExcel210" href="#">210</a></li>
-          <li><a name="${pageContext.request.contextPath }/socialFun/uploadExcel416" href="#">416</a></li>
-          <li><a name="${pageContext.request.contextPath }/socialFun/uploadExcel827" href="#">827</a></li>
+          <li><a name="/socialFun/uploadExcel52" href="#">52</a></li>
+          <li><a name="/socialFun/uploadExcel105" href="#">105</a></li>
+          <li><a name="/socialFun/uploadExcel210" href="#">210</a></li>
+          <li><a name="/socialFun/uploadExcel416" href="#">416</a></li>
+          <li><a name="/socialFun/uploadExcel827" href="#">827</a></li>
         </ul>
       </div>
       <div title="其他" data-options="iconCls:'icon-reload'">
