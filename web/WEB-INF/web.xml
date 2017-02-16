@@ -62,6 +62,17 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
+	<!-- jfreechart-->
+	<servlet>
+		<servlet-name>DisplayChart</servlet-name>
+		<servlet-class>org.jfree.chart.servlet.DisplayChart</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DisplayChart</servlet-name>
+		<url-pattern>/DisplayChart</url-pattern>
+	</servlet-mapping>
+
+
 
 	<display-name>socialFun</display-name>
 	<welcome-file-list>

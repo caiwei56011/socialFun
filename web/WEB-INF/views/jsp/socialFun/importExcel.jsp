@@ -31,7 +31,7 @@
         if(checkData()){
           $.ajax({
             type : "POST",  //提交方式
-            url : "${pageContext.request.contextPath}/uploadExcel/ajaxUpload",//路径
+            url : "${pageContext.request.contextPath}/uploadExcel/uploadExcelData",//路径
             data : {
               "org.id" : "${org.id}"
             },//数据，这里使用的是Json格式进行传输
@@ -56,10 +56,10 @@
         alert("选择需要导入的Excel文件！");
         return false;
       }
-      /*if(".xls" != suffix && ".xlsx" != suffix ){
+      if(".xls" != suffix && ".xlsx" != suffix ){
         alert("选择Excel格式的文件导入！");
         return false;
-      }*/
+      }
       return true;
     }
   </script>
@@ -68,7 +68,7 @@
 <body>
 </br>
 </br>
-<form method="POST"  enctype="multipart/form-data" id="form1" action="uploadExcel/formUpload">
+<form method="POST"  enctype="multipart/form-data" id="form1" action="uploadExcel/uploadExcelData">
   <table>
     <tr>
       <td>上传文件: </td>
@@ -77,14 +77,28 @@
       </td>
     </tr>
     <tr>
+      <td>请输入选手数量: </td>
+      <td>
+        <input id="playerNum" name = 'playerNum' type="text" >
+      </td>
+    </tr>
+    <tr>
+      <td>请输入裁判数量: </td>
+      <td>
+        <input id="refereeNum" name = 'refereeNum' type="text" >
+      </td>
+    </tr>
+    <tr>
       <td><input type="submit"  class="easyui-linkbutton" value="提交" onclick="checkData()"></td>
-      <td><input type="button" class="easyui-linkbutton" value="ajax方式提交" id="btn" name="btn" ></td>
+      <%--<td><input type="button" class="easyui-linkbutton" value="ajax方式提交" id="btn" name="btn" ></td>--%>
     </tr>
   </table>
 </form>
-  <div>
-    <h3>1.选择要上传的数据文件</h3>
-    <h3>2.目前支持03版本的excel数据</h3>
+
+<br>
+  <div >
+    <h3 style="color: #00bbee">1.选择要上传的数据文件</h3>
+    <h3 style="color: #00bbee">2.目前支持03版本的excel数据</h3>
   </div>
 </body>
 </html>

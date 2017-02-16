@@ -113,16 +113,16 @@
   <!-- ---------------------左边功能菜单开始--------------------------- -->
   <div data-options="region:'west',title:'Schulze社会选择函数'" style="width:200px;">
     <div id="aa" class="easyui-accordion" data-options="fit:true" >
-      <div id="menu" title="在线商品评价" data-options="iconCls:'icon-reload',selected:true">
+      <div id="menu" title="竞赛成绩评定系统" data-options="iconCls:'icon-reload',selected:true">
         <ul>
-          <li><a name="${pageContext.request.contextPath }/socialFun/uploadExcel52" href="#">52</a></li>
-          <li><a name="${pageContext.request.contextPath }/socialFun/uploadExcel105" href="#">105</a></li>
-          <li><a name="${pageContext.request.contextPath }/socialFun/uploadExcel210" href="#">210</a></li>
-          <li><a name="${pageContext.request.contextPath }/socialFun/uploadExcel416" href="#">416</a></li>
-          <li><a name="${pageContext.request.contextPath }/socialFun/uploadExcel827" href="#">827</a></li>
+          <li><a name="${pageContext.request.contextPath }/socialFun/uploadExcel" href="#">数据读取</a></li>
+          <li><a name="${pageContext.request.contextPath }/socialFun/uploadExcel105" href="#">偏好排序</a></li>
+          <li><a name="${pageContext.request.contextPath }/socialFun/schulzeFunction" href="#">Schulze方法</a></li>
+          <li><a name="${pageContext.request.contextPath }/socialFun/traditionFunction" href="#">传统方法</a></li>
+          <li><a name="${pageContext.request.contextPath }/socialFun/validateInfo" href="#">性质验证</a></li>
         </ul>
       </div>
-      <div title="竞赛成绩评定" data-options="iconCls:'icon-reload'">
+      <div title="历史记录" data-options="iconCls:'icon-reload'">
         content2
       </div>
       <div title="其他" data-options="iconCls:'icon-reload'">

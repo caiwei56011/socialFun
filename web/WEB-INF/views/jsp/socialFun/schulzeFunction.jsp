@@ -29,31 +29,6 @@
     body{
       font-family: "Microsoft YaHei"
     }
-
-    #menu {
-      width:200px;
-    }
-
-    #menu ul{
-      width:100%;
-      list-style: none;
-      margin: 0px;
-      padding: 0;
-    }
-    #menu ul li{
-      border-bottom: 1px solid #fff;
-    }
-    #menu ul li a{
-      width:100%;
-      display:block;
-      background-color: #285295;
-      text-decoration: none;
-      color:#fff;
-      padding:3px;
-    }
-    #menu ul li a:hover{
-      background-color: #4CBCFF;
-    }
   </style>
   <script type="text/javascript">
     $(document).ready(function(){
@@ -64,23 +39,8 @@
 </head>
 
 <body>
-偏好排序结果
-选手数量：<span style="color: red;">${playerNum }</span>
-裁判数量：<span style="color: red;">${refereeNum }</span>
-<table border="0">
+<span style="color: #00bbee"> Schulze评价方法结果:</span><br>
+player7   > 	player2   > 	player6   > 	player10   > 	player1   > 	player5   > 	player3   > 	player4   > 	player9   > 	player8
 
-  <c:forEach items="${excelLists }" var="var" varStatus="vs1">
-    <tr>
-      <td>裁判${vs1.count }：</td>
-        <c:forEach items="${var }" var="var2" varStatus="vs2">
-            <c:if test="${vs2.count } == 2">
-              111
-            </c:if>
-            <td style="width:100px">${var2 }&nbsp;&nbsp;&nbsp;&gt;</td>
-        </c:forEach>
-    </tr>
-  </c:forEach>
-
-</table>
 </body>
 </html>
