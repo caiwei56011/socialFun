@@ -92,23 +92,32 @@
 //应用主题样式
   ChartFactory.setChartTheme(standardChartTheme);
   DefaultCategoryDataset dataset     =   new  DefaultCategoryDataset();
-  dataset.addValue( 150 ,  " 北京 " ,  " 苹果 " );
-  dataset.addValue( 530 ,  " 上海 " ,  " 苹果 " );
-  dataset.addValue( 160 ,  " 广州 " ,  " 苹果 " );
-  dataset.addValue( 120 ,  " 北京 " ,  " 梨子 " );
-  dataset.addValue( 230 ,  " 上海 " ,  " 梨子 " );
-  dataset.addValue( 360 ,  " 广州 " ,  " 梨子 " );
-  dataset.addValue( 600 ,  " 北京 " ,  " 葡萄 " );
-  dataset.addValue( 430 ,  " 上海 " ,  " 葡萄 " );
-  dataset.addValue( 560 ,  " 广州 " ,  " 葡萄 " );
-  dataset.addValue( 400 ,  " 北京 " ,  " 香蕉 " );
-  dataset.addValue( 530 ,  " 上海 " ,  " 香蕉 " );
-  dataset.addValue( 660 ,  " 广州 " ,  " 香蕉 " );
-  dataset.addValue( 500 ,  " 北京 " ,  " 荔枝 " );
-  dataset.addValue( 630 ,  " 上海 " ,  " 荔枝 " );
-  dataset.addValue( 430 ,  " 广州 " ,  " 荔枝 " );
+  dataset.addValue( 7 ,  " G1 " ,  " p1 " );
+  dataset.addValue( 6 ,  " G2 " ,  " p1 " );
+  dataset.addValue( 7 ,  " G3 " ,  " p1 " );
+  dataset.addValue( 6 ,  " G1 " ,  " p2 " );
+  dataset.addValue( 4 ,  " G2 " ,  " p2 " );
+  dataset.addValue( 4 ,  " G3 " ,  " p2 " );
+  dataset.addValue( 5 ,  " G1 " ,  " p3 " );
+  dataset.addValue( 5 ,  " G2 " ,  " p3 " );
+  dataset.addValue( 7 ,  " G3 " ,  " p3 " );
+  dataset.addValue( 4 ,  " G1 " ,  " p4 " );
+  dataset.addValue( 3 ,  " G2 " ,  " p4 " );
+  dataset.addValue( 3 ,  " G3 " ,  " p4 " );
+  dataset.addValue( 2 ,  " G1 " ,  " p5 " );
+  dataset.addValue( 5 ,  " G2 " ,  " p5 " );
+  dataset.addValue( 5 ,  " G3 " ,  " p5 " );
+  dataset.addValue( 2 ,  " G1 " ,  " p6 " );
+  dataset.addValue( 1 ,  " G2 " ,  " p6 " );
+  dataset.addValue( 2 ,  " G3 " ,  " p6 " );
+  dataset.addValue( 0 ,  " G1 " ,  " p7 " );
+  dataset.addValue( 1 ,  " G2 " ,  " p7 " );
+  dataset.addValue( 0 ,  " G3 " ,  " p7 " );
+  dataset.addValue( 1 ,  " G1 " ,  " p8 " );
+  dataset.addValue( 0 ,  " G2 " ,  " p8 " );
+  dataset.addValue( 2 ,  " G3 " ,  " p8 " );
 
-  JFreeChart chart  =  ChartFactory.createBarChart3D( " 水果销量图统计-By Alpha " , " 水果种类-http://www.blogjava.net/Alpha/ " , " 销量 " ,dataset, PlotOrientation.VERTICAL, true , false , false );
+  JFreeChart chart  =  ChartFactory.createBarChart3D( " 一致性验证 " , " 传统方法一致性验证 " , " 成绩评定值 " ,dataset, PlotOrientation.VERTICAL, true , false , false );
   chart.setBackgroundPaint(Color.WHITE);
   CategoryPlot plot  =  chart.getCategoryPlot();
 
@@ -136,6 +145,6 @@
   //根据文件名去临时目录下寻找该图片，这里的/DisplayChart路径要与配置文件里用户自定义的<url-pattern>一致
 %>
 
-<img src="<%= url %>" width="800" height="600">
+<img src="<%= url %>" width="500" height="350">
 </body>
 </html>
